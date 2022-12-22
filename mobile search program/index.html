@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Search Program</title>
+</head>
+<body> 
+    <!-- ?Remember hasnain this is main box (div) -->
+   <div class="box-container">
+            <h1>Mobile Search App</h1>
+            <!--? remember this one is search box (div) in it => inputfields -->
+            <div id="search-box">
+                <label>Choose a Mobile brand & Company:</label>
+
+<select class="select" name="searchBar"  id="Mobilebrand" placeholder="Search for a Mobile brand & Company">
+  <option>Select brand</option> 
+  <option>Samsung</option>
+  <option>Infinix</option>
+  <option>Xiaomi</option>
+  <option>Iphone</option>
+</select><br>
+                <!-- <input type="text" name="searchBar" class="searchBar" id="Mobilebrand" placeholder="Search for a Mobile brand & Company"><br> -->
+                <input type="text"  name="searchBar" class="searchBar" id="Mobilemodel" placeholder="Search for a Mobile Model">
+                <input type="submit" value="Search" class="submit" onclick="MobileDataFinder()">
+            </div>
+           
+           
+           
+            <div id="charactersList">           
+            <ul class="charactersList" id="charactersList1"></ul>
+            <ul class="charactersList" id="charactersList2"></ul>
+            <ul class="charactersList" id="charactersList3"></ul>
+            <ul class="charactersList" id="charactersList4"></ul>
+            <ul class="charactersList" id="charactersList5"></ul>
+          </div>
+    
+    
+    </div>
+    </body>
+
+ <script src="app.js"></script>
+</html>
